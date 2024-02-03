@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "286f2338-2f35-46b7-99d7-330f5d08f28a",
+		"name": "to-do-list com nodejs",
+		"description": "Este arquivo do Postman contém testes de rotas para a API To-Do List desenvolvida em Node.js. Os testes visam assegurar o correto funcionamento das funcionalidades essenciais da aplicação.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28830468"
+	},
+	"item": [
+		{
+			"name": "get taks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks"
+					]
+				},
+				"description": "nesta requisição você obterá todas as tasks cadastradas no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "created taks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks"
+					]
+				},
+				"description": "nesse teste você pode inserir novas tasks no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/tasks/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks",
+						"4"
+					]
+				},
+				"description": "esse teste serve para deletar determinada taks a partir de seu id"
+			},
+			"response": []
+		},
+		{
+			"name": "alterar task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"title\": \"\",\r\n        \"status\": \"\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/tasks/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks",
+						"2"
+					]
+				},
+				"description": "nesse utimo teste serve para alterar a descrição e status da sua tasks"
+			},
+			"response": []
+		}
+	]
+}
