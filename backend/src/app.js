@@ -10,8 +10,12 @@
 const express = require('express');
 // Importa o módulo 'router' que contém as definições de rota
 const router = require('./router');
+// inportando o cors
+const cors = require('cors');
 // Cria a aplicação Express
 const app = express();
+// Habilita o middleware CORS
+app.use(cors());
 // Configura o uso do middleware para processar dados em formato JSON
 app.use(express.json());
 // Configura o uso do módulo 'router' para definir as rotas da aplicação
