@@ -1,18 +1,19 @@
+/* Importa as fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,300&family=Open+Sans:wght@300;600&family=Poppins:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap');
-
+/* Estilo global para redefinir margens, preenchimentos e caixa de modelo, usando a fonte 'Roboto' como padrão */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+/* Estilo do corpo da página, usando um gradiente de fundo */
 body{
     background: rgb(9,107,121);
     background: linear-gradient(90deg, rgba(9,107,121,1) 13%, rgba(0,212,255,1) 100%);
 
 }
-
+/* Estilo para a seção principal, com um fundo claro, bordas arredondadas, sombra e margens */
 main{
     background-color: #E1EBEE;
     border-radius: 8px;
@@ -21,14 +22,14 @@ main{
     margin: 40px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+/* Estilo do formulário de adição de tarefas, usando flexbox e espaçamento */
 .add-form{
     display: flex;
     margin-bottom: 50px;
     gap: 15px;
     width: 100%;
 }
-
+/* Estilo para o campo de entrada de texto no formulário */
 input {
     width: 100%;
     flex: 1;
@@ -39,7 +40,7 @@ input {
     font-size: 1rem;
     font-weight: 600;
 }
-
+/* Estilo para o botão de envio no formulário */
 button[type="submit"]{
     background-color: #00416A;
     height: 50px;
@@ -54,28 +55,28 @@ button[type="submit"]{
     font-weight: 500;
     cursor: pointer;
 }
-
+/* Estilo para a tabela que exibe as tarefas */
 table {
     border-collapse: collapse;
     width: 100%;
 }
-
+/* Estilo para as células da tabela (td e th) */
 td, th{
     padding: 10px 15px;
     border: 1px solid #002147;
     text-align: center;
 }
-
+/* Estilo específico para células td */
 td{
     color: #333 ;
     font-weight: 600;
 }
-
+/* Estilo para linhas pares da tabela */
 tr:nth-child(even){
     background-color: #c6d4d4;
 
 }
-
+/* Estilo para o elemento de seleção (dropdown) */
 select{
     width: 100%;
     border: none;
@@ -86,11 +87,11 @@ select{
     background-color: #F0F8FF;
     cursor: pointer;
 }
-
+/* Estilo para o elemento de seleção (dropdown) ao passar o mouse */
 select:hover{
     background-color: #ddd;
 }
-
+/* Estilo para botões de ação, usando bordas arredondadas, espaçamento, cores e efeito de cursor */
 .btn-action{
     border: none;
     border-radius: 5px;
@@ -101,10 +102,12 @@ select:hover{
     justify-content: center;
     cursor: pointer;
 }
+/* Estilo específico para o primeiro botão de ação (edit) */
 .btn-action:nth-child(1){
     background-color: orange;
     margin-right: 5px;
 }
+/* Estilo específico para o segundo botão de ação (delete) */
 .btn-action:nth-child(2){
     background-color: rgba(237, 42, 42, 0.9);
     margin-right: 5px;
